@@ -34,7 +34,12 @@ const routes: Routes = [
   {
     path: 'home/clients',
     loadChildren: () => import('./home/clients/clients.module').then( m => m.ClientsPageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
   }
+
 
 
 
